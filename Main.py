@@ -33,7 +33,6 @@ def addData(data, title, body):
     print("Заметка добавлена")
 
 def editData(data, note_id, title, body):
-    """Редактирование существующей заметки"""
     for note in data:
         if note["id"] == note_id:
             note["title"] = title
@@ -44,7 +43,6 @@ def editData(data, note_id, title, body):
     print("Заметка с таким ID не найдена.")
 
 def deleteData(data, note_id):
-    """Удаление заметки по ID"""
     for note in data:
         if note["id"] == note_id:
             data.remove(note)
